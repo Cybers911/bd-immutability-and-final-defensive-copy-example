@@ -1,10 +1,15 @@
 package com.frank;
 
 public class aClass {
+
         private int[] anArray;
 
         public aClass(int[] intArray) {
                 anArray = intArray;
+        }
+
+        public int[] getAnArray() {
+                return anArray;
         }
 
         public void showClass() {
