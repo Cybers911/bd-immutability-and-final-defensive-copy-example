@@ -15,6 +15,20 @@ public class FinalImmutabilityApplicationProgram {
                 showArray();         // Display values in this class' array
                 anObject.showClass();// Display the values in the aClass object array
 
+                System.out.println("Change the first element in main array to 999");
+
+                nums[0] = 999;
+                showArray();
+                anObject.showClass(); // Display the values in the aClass object array
+
+                System.out.println("Get the Array from the aClass object and change the value");
+
+               int [] copiedArray = anObject.getAnArray(); //tomamos el array de la clase aClass y
+                //modificamos el valor del primer elemento del array original
+                copiedArray[0] = 888;
+                anObject.showClass();
+
+
                 System.out.println("-".repeat(80));
 
         }  // end of main()
